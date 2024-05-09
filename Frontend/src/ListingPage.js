@@ -25,9 +25,9 @@ function ListingPage() {
     
     <>
       <NavBar></NavBar>
-      <div style={{color: 'White', margin: "20px auto" , maxWidth: "800px"}}>
+      <div style={{color: 'White', margin: "20px auto" , maxWidth: "800px,"}}>
         <Listing key={post.id} listing={post[0]} />
-        <a href={`/user/reviews/${post[0].SELLER_USER_ID}`}> Seller Reviews</a>
+        <a style={{color: 'red  '}} href={`/user/reviews/${post[0].SELLER_USER_ID}`}> Seller Reviews</a>
       </div>
       
     </>

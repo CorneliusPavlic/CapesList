@@ -20,12 +20,12 @@ const BuyPage = () => {
   return (
           <>
             <NavBar></NavBar>     
-            <BuyPageDiv>
+            <BuyPageDiv style={{margin:"20px", }}>
               {
                 post.map((listing) => (
                   <>
-                    <a href={`listing/${listing.LISTING_ID}`}>
-                    <Listing key={listing.id}  listing={listing} />
+                    <a style={{color: "white"}} href={`listing/${listing.LISTING_ID}`}>
+                    <Listing style={{color: "white"}} key={listing.id}  listing={listing} />
                     </a>
                   </>
              ))}
